@@ -23,7 +23,7 @@ const experiences = [
 
 const Experience = () => {
     return (
-        <section id="experience" className="pt-20 pb-10 bg-gray-100">
+        <section id="experience" className="hover-shadow wobble-background">
             <div className="container mx-auto px-4">
                 <h2 className="text-2xl font-bold mb-4">Experience</h2>
                 <div className="space-y-8">
