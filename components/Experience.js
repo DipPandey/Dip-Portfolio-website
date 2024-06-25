@@ -1,9 +1,9 @@
 const experiences = [
     {
-        role: 'Marketing Manager',
-        company: 'Great White Plumbing',
-        description: 'Managed marketing campaigns and strategies for Great White Plumbing, focusing on enhancing brand presence and customer engagement through digital channels.',
-        duration: 'Jan 2020 - Dec 2021',
+        role: 'Backup Manager Software Developer',
+        project: 'Omnicore Project',
+        description: 'Developed a backup manager software as part of the Omnicore project at the University of Tasmania, ensuring data security and reliability for university systems.',
+        duration: 'Aug 2019 - May 2020',
     },
     {
         role: 'Web Maintenance',
@@ -11,12 +11,14 @@ const experiences = [
         description: 'Maintained and updated the website for The Thirds, ensuring seamless user experience and optimal website performance.',
         duration: 'Mar 2021 - Present',
     },
+    
     {
-        role: 'Backup Manager Software Developer',
-        project: 'Omnicore Project',
-        description: 'Developed a backup manager software as part of the Omnicore project at the University of Tasmania, ensuring data security and reliability for university systems.',
-        duration: 'Aug 2019 - May 2020',
-    },
+        role: 'Marketing Manager',
+        company: 'Great White Plumbing',
+        description: 'Managed marketing campaigns and strategies for Great White Plumbing, focusing on enhancing brand presence and customer engagement through digital channels.',
+        duration: 'Jan 2020 - Dec 2021',
+    }
+    
 ];
 
 const Experience = () => {
