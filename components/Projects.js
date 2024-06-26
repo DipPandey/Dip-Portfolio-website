@@ -18,7 +18,7 @@ const Projects = () => {
             ]
         },
         {
-            title: 'Portfolio Website',
+            title: 'Next.js Portfolio Website',
             description: 'A personal portfolio website built with Next.js and Nextra to showcase my projects and skills.',
             imageUrl: '/images/portfolio-website.png',
             demoUrl: 'https://your-live-demo-url.com',
@@ -26,7 +26,25 @@ const Projects = () => {
             techStack: [
                 { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
                 { name: 'Nextra', icon: 'https://img.shields.io/badge/Nextra-000000?style=flat-square&logo=nextra&logoColor=white' },
-                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' }
+                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
+                {
+                    name: 'React Native',
+                    icon: 'https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB'
+                }
+
+
+            ]
+        },
+        {
+            title: 'Road Network Shortest Path',
+            description: 'A project comparing the performance of Dijkstra\'s and A* algorithms for finding the shortest path in a road network.',
+            imageUrl: '/images/road-network-shortest-path.png',
+            demoUrl: 'https://your-live-demo-url.com',
+            repoUrl: 'https://github.com/DipPandey/RoadNetworkShortestPath',
+            techStack: [
+                { name: 'Python', icon: 'https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white' },
+                { name: 'NetworkX', icon: 'https://img.shields.io/badge/NetworkX-000000?style=flat-square&logo=networkx&logoColor=white' },
+                { name: 'Matplotlib', icon: 'https://img.shields.io/badge/Matplotlib-000000?style=flat-square&logo=matplotlib&logoColor=white' }
             ]
         }
     ];

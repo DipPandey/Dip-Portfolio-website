@@ -4,7 +4,7 @@ import Home from '../components/Home';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 import GlassCard from '../components/GlassCard';
-import Resume from '../components/Resume';
+import Skills from '../components/Skills';
 
 const Index = () => {
     return (
@@ -14,6 +14,9 @@ const Index = () => {
             </GlassCard>
             <GlassCard>
                 <Experience />
+            </GlassCard>
+            <GlassCard>
+                <Skills />
             </GlassCard>
             <GlassCard>
                 <Projects />
