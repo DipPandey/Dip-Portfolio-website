@@ -15,7 +15,7 @@ const Sidebar = () => {
                     />
                 </div>
                 <div className="text-center font-bold text-2xl mb-2">
-                    Dip Pandey
+                    Dip Pandey fuck you pandey
                 </div>
                 <div className="flex space-x-4 mb-4">
                     <a href="https://github.com/DipPandey" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
