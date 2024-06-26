@@ -5,21 +5,21 @@ const Home = () => {
     const ref = useVisibility();
 
     return (
-        <section id="home" ref={ref} className="animated opacity-0">
-            <div className="container mx-auto px-4 py-20 lg:py-40">
+        <section id="home" ref={ref} className="animated opacity-10">
+            <div className="container mx-auto px-4 py-1 lg:py-1">
                 <div className="bg-gray-800 bg-opacity-90 backdrop-filter backdrop-blur-lg rounded-lg p-8 lg:p-16 shadow-xl flex flex-col lg:flex-row items-center">
-                    <div className="lg:w-1/3 mb-8 lg:mb-0 lg:mr-8">
+                    <div className="lg:w-1/4 mb-2 lg:mb-0 lg:mr-8">
                         <img
                             src="/images/photo dip.png"
                             alt="Dip Pandey"
-                            className="animated-image rounded-full w-full border-4 border-gray-200 shadow-lg"
+                            className="animated-image rounded-full w-full border-2 border-transparent-200 shadow-lg"
                         />
                     </div>
                     <div className="lg:w-2/3">
-                        <h2 className="text-4xl lg:text-5xl font-extrabold mb-4">
-                            Hello, my name is <span className="text-blue-600">Dip Pandey</span>
+                        <h2 className="text-2xl lg:text-4xl font-extrabold mb-3">
+                            Hello, my name is <span className="text-blue-300">Dip Pandey</span>
                         </h2>
-                        <h3 className="text-2xl lg:text-3xl text-blue-500 mb-6">
+                        <h3 className="text-2xl lg:text-2xl text-blue-600 mb-6">
                             Developer & Tech Enthusiast
                         </h3>
                         <p className="mt-4 text-lg leading-relaxed text-gray-300">

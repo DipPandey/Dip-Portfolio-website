@@ -78,8 +78,11 @@ const Sidebar = () => {
                             Projects
                         </Link>
                     </li>
+
                 </ul>
+
             </nav>
+
         </div>
     );
 };
