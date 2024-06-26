@@ -21,7 +21,7 @@ const Projects = () => {
             title: 'Next.js Portfolio Website',
             description: 'A personal portfolio website built with Next.js and Nextra to showcase my projects and skills.',
             imageUrl: '/images/portfolio-website.png',
-            demoUrl: 'https://your-live-demo-url.com',
+            demoUrl: 'https://dip-portfolio-website.vercel.app/',
             repoUrl: 'https://github.com/DipPandey/portfolio-website',
             techStack: [
                 { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
