@@ -1,4 +1,3 @@
-// components/useVisibility.js
 import { useEffect, useRef } from 'react';
 
 const useVisibility = () => {

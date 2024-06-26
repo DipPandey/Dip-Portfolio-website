@@ -47,12 +47,12 @@ const Experience = () => {
     const ref = useVisibility();
     return (
         <section id="experience" ref={ref} className="animated opacity-0">
-            <div className="container mx-auto px-1 py-4 lg:py-4">
+            <div className="container mx-auto px-1 py-2 lg:py-10">
                 <h2 className="text-4xl font-bold mb-12 text-blue-200 text-center">Experience</h2>
                 <div className="space-y-8">
                     {experiences.map((exp, index) => (
                         <div key={index} className="bg-gray-800 bg-opacity-80 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-                            <h3 className="text-2xl font-bold mb-2 text-blue-200">{exp.role} at {exp.company || exp.project}</h3>
+                            <h3 className="text-2xl font-bold mb-2 text-white-200">{exp.role} at {exp.company || exp.project}</h3>
                             <p className="text-gray-300 mb-2">{exp.description}</p>
                             <p className="text-gray-500 mb-4">{exp.duration}</p>
                             {exp.skills && (

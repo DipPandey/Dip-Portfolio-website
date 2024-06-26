@@ -12,7 +12,6 @@ const skills = {
         { name: 'GraphQL', icon: 'https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white' },
         { name: 'C', icon: 'https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white' },
         { name: 'C++', icon: 'https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white' }
-
     ],
     'Libraries & Frameworks': [
         { name: 'React', icon: 'https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB' },
@@ -29,6 +28,10 @@ const skills = {
         { name: 'Timber for WordPress', icon: 'https://img.shields.io/badge/Timber-000000?style=flat-square&logo=timber&logoColor=white' }
     ],
     'Tools & Platforms': [
+        {
+            "name": "Visual Studio",
+            "icon": "https://img.shields.io/badge/Visual_Studio-5C2D91?style=flat-square&logo=visual%20studio&logoColor=white"
+        },
         { name: 'Git', icon: 'https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white' },
         { name: 'GitHub', icon: 'https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white' },
         { name: 'Netlify', icon: 'https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white' },
@@ -42,6 +45,9 @@ const skills = {
         { name: 'Docker', icon: 'https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white' },
         { name: 'Webpack', icon: 'https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black' },
         { name: 'Figma', icon: 'https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white' }
+        
+
+        
     ]
 };
 
@@ -58,7 +64,7 @@ const Skills = () => {
                             <h3 className="text-2xl font-bold mb-4 text-blue-200">{category}</h3>
                             <div className="flex space-x-4 overflow-x-auto pb-4">
                                 {skills[category].map((skill, skillIndex) => (
-                                    <div key={skillIndex} className="bg-gray-700 bg-opacity-80 p-4 shadow-md rounded-md min-w-max">
+                                    <div key={skillIndex} className="bg-gray-700 bg-opacity-80 p-4 shadow-md rounded-md min-w-max transform transition-transform duration-200 hover:scale-110">
                                         <img src={skill.icon} alt={skill.name} className="w-8 h-8 mb-2 inline-block" />
                                         <p className="text-gray-300 inline-block">{skill.name}</p>
                                     </div>

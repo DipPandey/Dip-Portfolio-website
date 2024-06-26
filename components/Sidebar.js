@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faHome, faBriefcase, faProjectDiagram, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faBriefcase, faProjectDiagram, faFileAlt, faTools } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
     return (
@@ -78,11 +78,22 @@ const Sidebar = () => {
                             Projects
                         </Link>
                     </li>
-
+                    <li className="group">
+                        <Link
+                            to="skills"
+                            smooth={true}
+                            duration={500}
+                            className="flex items-center p-4 cursor-pointer transition-colors duration-200 hover:bg-green-600 hover:text-white group-hover:scale-105 transform transition-transform duration-200"
+                        >
+                            <FontAwesomeIcon icon={faTools} className="mr-3" />
+                            Skills
+                        </Link>
+                    </li>
                 </ul>
-
             </nav>
-
+            <div className="p-6 text-center text-gray-400 text-sm">
+                &copy; 2024 Dip Pandey. All rights reserved.
+            </div>
         </div>
     );
 };
