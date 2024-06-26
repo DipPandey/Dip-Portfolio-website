@@ -25,6 +25,8 @@
 My Portfolio site using Next.js and Tailwind CSS. Mobile First Layout and Fully Responsive.
 
 ## 🚀 Screenshot
+![image](https://github.com/DipPandey/Dip-Portfolio-website/assets/83689392/11932251-7f77-4ecb-88e0-26912cfb6c8d)
+
 
 ![](https://repository-images.githubusercontent.com/your-repository-url)
 
@@ -47,20 +49,7 @@ My Portfolio site using Next.js and Tailwind CSS. Mobile First Layout and Fully 
 - https://nextjs.org/
 - https://tailwindcss.com/
 
-## 🙏 Support
 
-<p align="left">
-<a href="https://www.paypal.me/dippandey"><img src="https://ionicabizau.github.io/badges/paypal.svg" alt="sponsor github profile"/>
-</a>
-<a href="upi://pay/?pa=dippandey%40ybl&pn=Dip+Pandey">
-<img src="https://raw.githubusercontent.com/PtPrashantTripathi/ptprashanttripathi.github.io/main/img/phonepe-logo-big.png" alt="linkpe"/>
-</a>
-</p>
-<p align="left">
-  <a href='https://ko-fi.com/dippandey' target='_blank'><img height='23' width="100" src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' alt='Buy Coffee for Dip Pandey' />
-  </a>
-  <a href="https://www.buymeacoffee.com/dippandey" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="23" width="100" style="border-radius:2px" />
-</p>
 
 ## Contributors ✨
 
