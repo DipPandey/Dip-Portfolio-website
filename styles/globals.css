@@ -2,19 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom cursor style */
+/* globals.css */
 .custom-cursor {
     position: fixed;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    background: rgb(190, 188, 190, 0.30);
     pointer-events: none;
-    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
     z-index: 9999;
-    transition: transform 0.05s ease-out, background 0.2s;
-    animation: ripple 1s infinite;
+    mix-blend-mode: difference;
+    transition: transform 0.15s ease-out, opacity 0.15s ease-out;
 }
+
+    .custom-cursor.hidden {
+        opacity: 0;
+    }
 
     .custom-cursor.hovered {
         background: rgb(128, 128, 128);
@@ -59,11 +63,11 @@
     position: fixed;
     top: 0;
     background: rgba(255, 255, 255, 0.1); /* Light color with lower opacity */
-    border-radius: 50%; /* More rounded shape */
+    border-radius: 190%; /* More rounded shape */
     pointer-events: none;
     animation: fall 1s linear infinite;
-    width: 3px; /* Smaller size */
-    height: 8px; /* Adjusted for a more elongated drop shape */
+    width: 2px; /* Smaller size */
+    height: 15px; /* Adjusted for a more elongated drop shape */
 }
 
 
@@ -106,7 +110,61 @@
         opacity: 1;
         transform: translateY(0);
     }
+/* globals.css */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
 
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
 
+.animated {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+}
 
+.visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 
+/* globals.css */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+a {
+    color: #90caf9;
+    transition: color 0.2s ease;
+}
+
+    a:hover {
+        color: #e57373;
+    }
+
+.bg-gradient-to-b {
+    background: linear-gradient(to bottom, #121212, #424242);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.3);
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
+}
+
+.animated-image {
+    transition: transform 0.5s ease;
+}
+
+    .animated-image:hover {
+        transform: scale(1.05);
+    }

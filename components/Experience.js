@@ -1,3 +1,6 @@
+// components/Experience.js
+import { useEffect, useRef } from 'react';
+
 const experiences = [
     {
         role: 'Backup Manager Software Developer',
@@ -11,18 +14,13 @@ const experiences = [
         description: 'Maintained and updated the website for The Thirds, ensuring seamless user experience and optimal website performance.',
         duration: 'Mar 2021 - Present',
     },
-    
     {
         role: 'Marketing Manager',
         company: 'Great White Plumbing',
         description: 'Managed marketing campaigns and strategies for Great White Plumbing, focusing on enhancing brand presence and customer engagement through digital channels.',
         duration: 'Jan 2020 - Dec 2021',
     }
-    
 ];
-
-// Add this to your components
-import { useEffect, useRef } from 'react';
 
 const useVisibility = () => {
     const ref = useRef();
@@ -42,15 +40,16 @@ const useVisibility = () => {
 };
 
 const Experience = () => {
+    const ref = useVisibility();
     return (
-        <section id="experience" className="hover-shadow wobble-background">
-            <div className="container mx-auto px-4">
-                <h2 className="text-2xl font-bold mb-4">Experience</h2>
+        <section id="experience" ref={ref} className="animated opacity-0">
+            <div className="container mx-auto px-1 py-10 lg:py-10">
+                <h2 className="text-4xl font-bold mb-12 text-white text-center">Experience</h2>
                 <div className="space-y-8">
                     {experiences.map((exp, index) => (
-                        <div key={index} className="bg-white p-6 shadow-lg rounded-lg">
-                            <h3 className="text-xl font-bold mb-2">{exp.role} at {exp.company || exp.project}</h3>
-                            <p className="text-gray-700 mb-2">{exp.description}</p>
+                        <div key={index} className="bg-gray-800 bg-opacity-80 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
+                            <h3 className="text-2xl font-bold mb-2 text-white">{exp.role} at {exp.company || exp.project}</h3>
+                            <p className="text-gray-300 mb-2">{exp.description}</p>
                             <p className="text-gray-500">{exp.duration}</p>
                         </div>
                     ))}

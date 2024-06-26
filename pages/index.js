@@ -1,3 +1,4 @@
+// pages/index.js
 import Layout from '../components/Layout';
 import Home from '../components/Home';
 import Experience from '../components/Experience';
@@ -7,11 +8,8 @@ import Resume from '../components/Resume';
 
 const Index = () => {
     return (
-
         <Layout>
-           
             <GlassCard>
-               
                 <Home />
             </GlassCard>
             <GlassCard>
@@ -20,7 +18,7 @@ const Index = () => {
             <GlassCard>
                 <Projects />
             </GlassCard>
-            <Resume/>
+           
         </Layout>
     );
 };
