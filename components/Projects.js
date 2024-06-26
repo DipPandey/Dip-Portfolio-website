@@ -22,7 +22,7 @@ const Projects = () => {
             description: 'A personal portfolio website built with Next.js and Nextra to showcase my projects and skills.',
             imageUrl: '/images/portfolio-website.png',
             demoUrl: 'https://dip-portfolio-website.vercel.app/',
-            repoUrl: 'https://github.com/DipPandey/portfolio-website',
+            repoUrl: 'https://github.com/DipPandey/Dip-Portfolio-website',
             techStack: [
                 { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
                 { name: 'Nextra', icon: 'https://img.shields.io/badge/Nextra-000000?style=flat-square&logo=nextra&logoColor=white' },
