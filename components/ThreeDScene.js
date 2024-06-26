@@ -1,19 +1,25 @@
-import React from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import { OrbitControls, Text } from '@react-three/drei';
 
-function Model() {
-    const { scene } = useGLTF('/path/to/your/3d/model.glb');
-    return <primitive object={scene} />;
-}
 
 const ThreeDScene = () => {
     return (
         <Canvas>
+            <OrbitControls enableZoom={false} />
             <ambientLight intensity={0.5} />
-            <directionalLight position={[10, 10, 5]} intensity={1} />
-            <OrbitControls />
-            <Model />
+            <directionalLight position={[0, 5, 5]} />
+            <Text
+                color="white"
+                fontSize={1}
+                maxWidth={200}
+                lineHeight={1}
+                textAlign={'center'}
+                font="https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxM.woff"
+                anchorX="center"
+                anchorY="middle"
+            >
+                Dip Pandey
+            </Text>
         </Canvas>
     );
 };

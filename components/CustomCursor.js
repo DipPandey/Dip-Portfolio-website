@@ -41,8 +41,21 @@ const CustomCursor = () => {
             }, 1000);
         };
 
+        const addHoverEffect = () => {
+            document.querySelectorAll('.hover-target').forEach(element => {
+                element.addEventListener('mouseenter', () => {
+                    cursor.classList.add('hovered');
+                });
+                element.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('hovered');
+                });
+            });
+        };
+
         window.addEventListener('mousemove', moveCursor);
         const rainInterval = setInterval(createRaindrop, 100);
+
+        addHoverEffect();
 
         return () => {
             window.removeEventListener('mousemove', moveCursor);

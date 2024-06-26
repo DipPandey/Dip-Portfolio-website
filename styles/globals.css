@@ -8,22 +8,28 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgb(190, 188, 190, 0.30);
     pointer-events: none;
     mix-blend-mode: difference;
     z-index: 9999;
-    transition: transform 0.05s ease-out;
+    transition: transform 0.05s ease-out, background 0.2s;
+    animation: ripple 1s infinite;
 }
+
+    .custom-cursor.hovered {
+        background: rgb(128, 128, 128);
+        transform: scale(4);
+    }
 
 /* Custom cursor shadow on hover */
 .hover-shadow:hover .custom-cursor {
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
-    transform: scale(2);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    transform: scale(5);
 }
 
 /* Background wobble effect */
 .wobble-background {
-    transition: transform 0.15s ease-out;
+    transition: transform 0.05s ease-out;
 }
 
     .wobble-background:hover {
@@ -34,57 +40,72 @@
 @keyframes ripple {
     0% {
         transform: scale(1);
-        opacity: 0.8;
+        opacity: 1;
     }
 
     50% {
-        transform: scale(1.0);
+        transform: scale(0.5);
         opacity: 0.5;
     }
 
     100% {
-        transform: scale(5);
+        transform: scale(0.5);
         opacity: 0;
     }
 }
 
-/* Rain effect */
-@keyframes drop {
-    0% {
-        transform: translateY(-300%);
-        opacity: 0.3;
-    }
-
-    100% {
-        transform: translateY(100vh);
-        opacity: 0;
-    }
-}
-
+/* Raindrop style */
 .raindrop {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 20%;
-    animation: drop 0.05s linear infinite;
+    background: rgba(255, 255, 255, 0.1); /* Light color with lower opacity */
+    border-radius: 50%; /* More rounded shape */
     pointer-events: none;
-    mix-blend-mode: difference;
+    animation: fall 1s linear infinite;
+    width: 3px; /* Smaller size */
+    height: 8px; /* Adjusted for a more elongated drop shape */
 }
 
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Wet spot style */
 .wet-spot {
-    position: absolute;
+    position: fixed;
     width: 10px;
     height: 10px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
     pointer-events: none;
-    mix-blend-mode: multiply;
-    opacity: 1;
     transition: opacity 0.5s ease-out;
 }
+
+
+/* Custom animation for the profile image */
+.animated-image {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+    .animated-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+/* Add this to your CSS file */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 
 

@@ -22,7 +22,7 @@ const Resume = () => {
     }, [isHovered]);
 
     return (
-        <div className="fixed top-0 right-0 m-4">
+        <div className="fixed top-0 left-100 m-10">
             <a
                 href="/Profile.pdf"
                 target="_blank"
