@@ -3,11 +3,21 @@ import { useEffect } from 'react';
 
 const CustomCursor = () => {
     useEffect(() => {
-        const createParticle = (e) => {
+        const cursor = document.querySelector('.custom-cursor');
+
+        const moveCursor = (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+
+            // Create particle effect
+            createParticle(e.clientX, e.clientY);
+        };
+
+        const createParticle = (x, y) => {
             const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = `${e.clientX}px`;
-            particle.style.top = `${e.clientY}px`;
+            particle.classList.add('particle');
+            particle.style.left = `${x}px`;
+            particle.style.top = `${y}px`;
             document.body.appendChild(particle);
 
             setTimeout(() => {
@@ -15,11 +25,11 @@ const CustomCursor = () => {
             }, 1000);
         };
 
-        window.addEventListener('mousemove', createParticle);
-        return () => window.removeEventListener('mousemove', createParticle);
+        window.addEventListener('mousemove', moveCursor);
+        return () => window.removeEventListener('mousemove', moveCursor);
     }, []);
 
-    return null;
+    return <div className="custom-cursor"></div>;
 };
 
 export default CustomCursor;
