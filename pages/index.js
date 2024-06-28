@@ -10,20 +10,20 @@ import GlassCard from '../components/GlassCard';
 const Index = () => {
     return (
         <Layout>
-         
+            <GlassCard>
                 <Home />
-        
-            
+            </GlassCard>
+            <GlassCard>
                 <Experience />
-           
+            </GlassCard>
             <GlassCard>
                
                  <AWSCertification />
                 <Skills />
             </GlassCard>
-         
+            <GlassCard>
                 <Projects />
-           
+            </GlassCard>
         </Layout>
     );
 };
