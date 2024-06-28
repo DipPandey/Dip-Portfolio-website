@@ -1,12 +1,16 @@
+import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faHome, faBriefcase, faProjectDiagram, faFileAlt, faTools } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faBriefcase, faProjectDiagram, faFileAlt, faTools, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggleSidebar }) => {
     return (
-        <div className="fixed top-0 left-0 h-screen w-64 bg-gradient-to-b from-gray-800 to-gray-900 text-white shadow-lg flex flex-col justify-between">
+        <div className={`fixed top-0 left-0 h-screen w-64 bg-gradient-to-b from-gray-800 to-gray-900 text-white shadow-lg flex flex-col justify-between transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0`}>
             <div className="flex flex-col items-center mt-6">
+                <button className="lg:hidden text-white text-2xl mb-6" onClick={toggleSidebar}>
+                    <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+                </button>
                 <div className="w-50 h-40 mb-5">
                     <img
                         src="/images/photo dip.png"
@@ -50,7 +54,7 @@ const Sidebar = () => {
                             to="home"
                             smooth={true}
                             duration={500}
-                            className="flex items-center p-4 cursor-pointer transition-colors duration={500} hover:bg-red-600 hover:text-white group-hover:scale-105 transform transition-transform duration-200"
+                            className="flex items-center p-4 cursor-pointer transition-colors duration-200 hover:bg-red-600 hover:text-white group-hover:scale-105 transform transition-transform duration-200"
                         >
                             <FontAwesomeIcon icon={faHome} className="mr-3" />
                             Home
