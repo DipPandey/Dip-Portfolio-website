@@ -26,6 +26,30 @@ const experiences = [
     }
 ];
 
+const freelanceProjects = [
+    {
+        role: 'Full-Stack Developer',
+        project: 'E-commerce Platform',
+        description: 'Developed a full-fledged e-commerce platform for a local business, integrating payment gateways and user authentication.',
+        duration: 'Jun 2021 - Aug 2021',
+        skills: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'JWT']
+    },
+    {
+        role: 'Front-End Developer',
+        project: 'Portfolio Website',
+        description: 'Created a personal portfolio website to showcase projects and skills, with an emphasis on responsive design and smooth animations.',
+        duration: 'Sep 2021 - Oct 2021',
+        skills: ['Next.js', 'Tailwind CSS', 'Framer Motion']
+    },
+    {
+        role: 'Back-End Developer',
+        project: 'API for Mobile App',
+        description: 'Developed a robust and scalable RESTful API for a mobile application, including user management and real-time data processing.',
+        duration: 'Nov 2021 - Dec 2021',
+        skills: ['Node.js', 'Express', 'MongoDB', 'Socket.io']
+    }
+];
+
 const useVisibility = () => {
     const ref = useRef();
     useEffect(() => {
@@ -70,6 +94,22 @@ const Experience = () => {
                                 )}
                             </div>
                         </a>
+                    ))}
+                </div>
+                <h2 className="text-4xl font-bold mb-12 text-blue-200 text-center mt-16">Freelance Projects</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {freelanceProjects.map((project, index) => (
+                        <div key={index} className="bg-gray-800 bg-opacity-80 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
+                            <h3 className="text-2xl font-bold mb-2 text-white">{project.role} - {project.project}</h3>
+                            <p className="text-gray-300 mb-2">{project.description}</p>
+                            <p className="text-gray-500 mb-4">{project.duration}</p>
+                            {project.skills && (
+                                <div className="mt-4">
+                                    <h4 className="text-xl font-bold text-blue-300">Skills Utilized:</h4>
+                                    <p className="text-gray-300">{project.skills.join(', ')}</p>
+                                </div>
+                            )}
+                        </div>
                     ))}
                 </div>
             </div>
