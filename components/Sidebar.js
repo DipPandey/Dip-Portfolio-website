@@ -50,7 +50,7 @@ const Sidebar = () => {
                             to="home"
                             smooth={true}
                             duration={500}
-                            className="flex items-center p-4 cursor-pointer transition-colors duration-200 hover:bg-red-600 hover:text-white group-hover:scale-105 transform transition-transform duration-200"
+                            className="flex items-center p-4 cursor-pointer transition-colors duration={500} hover:bg-red-600 hover:text-white group-hover:scale-105 transform transition-transform duration-200"
                         >
                             <FontAwesomeIcon icon={faHome} className="mr-3" />
                             Home
