@@ -41,6 +41,21 @@ const Projects = () => {
                 { name: 'NetworkX', icon: 'https://img.shields.io/badge/NetworkX-000000?style=flat-square&logo=networkx&logoColor=white' },
                 { name: 'Matplotlib', icon: 'https://img.shields.io/badge/Matplotlib-000000?style=flat-square&logo=matplotlib&logoColor=white' }
             ]
+        },
+        {
+            title: 'AI-Powered Quiz Buddy',
+            description: 'An AI-powered web application that generates quizzes based on user input and provides explanations on various topics.',
+            imageUrl: '/images/ai-powered-quiz-buddy.png',
+            demoUrl: 'https://reliable-bunny-3ac1f8.netlify.app/',
+            repoUrl: 'https://github.com/DipPandey/AI-Powered-Quiz-Buddy',
+            techStack: [
+                { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
+                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
+                { name: 'Node.js', icon: 'https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white' },
+                { name: 'Express', icon: 'https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white' },
+                { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white' },
+                { name: 'OpenAI', icon: 'https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white' }
+            ]
         }
     ];
 
