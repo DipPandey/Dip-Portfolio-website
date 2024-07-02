@@ -47,7 +47,7 @@ const Projects = () => {
             description: 'An AI-powered web application that generates quizzes based on user input and provides explanations on various topics.',
             imageUrl: '/images/ai-powered-quiz-buddy.png',
             demoUrl: 'https://reliable-bunny-3ac1f8.netlify.app/',
-            repoUrl: 'https://github.com/DipPandey/AI-Powered-Quiz-Buddy',
+            repoUrl: 'https://github.com/DipPandey/my-study-buddy',
             techStack: [
                 { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
                 { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
@@ -63,9 +63,9 @@ const Projects = () => {
         <section id="projects" className="py-10 lg:py-10 bg-gray-900 text-white">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold mb-12 text-blue-200 text-center">Personal Projects</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="flex flex-wrap gap-8 overflow-x-auto">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-gray-800 bg-opacity-50 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:bg-opacity-75">
+                        <div key={index} className="bg-gray-800 bg-opacity-50 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:bg-opacity-75 flex-none w-64">
                             <img src={project.imageUrl} alt={project.title} className="rounded-lg mb-4" />
                             <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                             <p className="text-gray-300 mb-4">{project.description}</p>
