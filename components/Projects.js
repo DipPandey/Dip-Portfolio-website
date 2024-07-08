@@ -1,4 +1,3 @@
-// components/Projects.js
 const Projects = () => {
     const projects = [
         {
@@ -62,10 +61,10 @@ const Projects = () => {
     return (
         <section id="projects" className="py-10 lg:py-10 bg-gray-900 text-white">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-12 text-blue-200 text-center">Personal Projects</h2>
-                <div className="flex flex-wrap gap-8 overflow-x-auto">
+                <h2 className="text-4xl font-bold mb-10 text-blue-200 text-center">Personal Projects</h2>
+                <div className="flex flex-col gap-6">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-gray-800 bg-opacity-50 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:bg-opacity-75 flex-none w-64">
+                        <div key={index} className="bg-gray-800 bg-opacity-50 p-6 shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-95 hover:shadow-xl hover:shadow-blue-100">
                             <img src={project.imageUrl} alt={project.title} className="rounded-lg mb-4" />
                             <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                             <p className="text-gray-300 mb-4">{project.description}</p>
