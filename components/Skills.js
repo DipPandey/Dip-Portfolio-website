@@ -56,7 +56,7 @@ const Skills = () => {
                     {Object.keys(skills).map((category, index) => (
                         <div key={index} className="bg-gray-800 bg-opacity-80 p-4 shadow-lg rounded-lg">
                             <h3 className="text-xl font-bold mb-2 text-blue-200">{category}</h3>
-                            <div className="flex space-x-2 overflow-x-auto pb-2">
+                            <div className="flex space-x-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
                                 {skills[category].map((skill, skillIndex) => (
                                     <div key={skillIndex} className="bg-gray-700 bg-opacity-80 p-2 shadow-md rounded-md min-w-max transform transition-transform duration-200 hover:scale-105">
                                         <img src={skill.icon} alt={skill.name} className="w-6 h-6 mb-1 inline-block" />
