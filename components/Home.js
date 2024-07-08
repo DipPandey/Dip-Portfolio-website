@@ -13,7 +13,7 @@ const Home = () => {
                         <img
                             src="/images/photo dip.png"
                             alt="Dip Pandey"
-                            className="animated-image rounded-full w-full border-2 border-transparent-200 shadow-lg"
+                            className="animated-image rounded-full w-full border-1 border-transparent-400 shadow-lg"
                         />
                     </div>
                     <div className="lg:w-1/2">

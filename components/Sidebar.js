@@ -6,7 +6,7 @@ import { faHome, faBriefcase, faProjectDiagram, faFileAlt, faTools, faBars, faTi
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
     return (
-        <div className={`fixed top-0 left-0 h-screen w-60 bg-gradient-to-b from-gray-800 to-gray-900 text-white shadow-lg flex flex-col justify-between transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0`}>
+        <div className={`fixed top-0 left-0 h-screen w-60 bg-gradient-to-b from-gray-600 to-gray-900 text-white shadow-lg flex flex-col justify-between transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0`}>
             <div className="flex flex-col items-center mt-6">
                 <button className="lg:hidden text-white text-2xl mb-6" onClick={toggleSidebar}>
                     <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
