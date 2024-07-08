@@ -40,7 +40,7 @@ const Home = () => {
                         <div className="mt-8 flex flex-col items-center lg:items-start">
                             <div className="flex items-center space-x-4 mb-4">
                                 <a
-                                    href="/Profile.pdf"
+                                    href="/Dip resume.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-gray-600 text-white px-4 py-2 rounded shadow hover:bg-blue-200 transition duration-200 flex items-center"
