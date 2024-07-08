@@ -72,7 +72,7 @@ const Experience = () => {
     return (
         <section id="experience" ref={ref} className="animated opacity-0 h-screen overflow-y-auto">
             <div className="container mx-auto px-4 py-8">
-                <h2 className="text-3xl font-bold mb-5 text-blue-200 text-center">Experience</h2>
+                <h2 className="text-3xl font-bold mb-5 text-blue-300 text-center">Experience</h2>
                 <div className="flex flex-col gap-6">
                     {experiences.map((exp, index) => (
                         <a
