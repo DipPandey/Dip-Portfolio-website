@@ -324,3 +324,34 @@ body, html {
     }
 }
 
+/* Custom CSS */
+@keyframes pop-in {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.project-card {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    animation: pop-in 0.5s ease-out;
+}
+
+    .project-card:hover {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+    }
+
+    .project-card img {
+        transition: transform 0.3s ease;
+    }
+
+    .project-card:hover img {
+        transform: scale(1.05);
+    }
+
+
