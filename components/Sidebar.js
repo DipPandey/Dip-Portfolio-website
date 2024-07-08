@@ -37,7 +37,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </div>
                 <div className="text-center mb-6">
                     <a
-                        href="/Profile.pdf"
+                        href="/Dip resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-white bg-gray-600 px-3 py-2 rounded shadow hover:bg-gray-500 transition duration-100"
