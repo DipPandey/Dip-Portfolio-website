@@ -1,24 +1,20 @@
-import { useState } from 'react';
+// components/Sidebar.js
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faHome, faBriefcase, faProjectDiagram, faFileAlt, faTools, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faInstagram, faTwitter, faHome, faBriefcase, faProjectDiagram, faFileAlt, faTools } from '@fortawesome/free-solid-svg-icons';
 
-const Sidebar = ({ isOpen, toggleSidebar }) => {
+const Sidebar = () => {
     return (
-        <div className={`fixed top-0 left-0 h-screen w-64 bg-gradient-to-b from-gray-800 to-gray-900 text-white shadow-lg flex flex-col justify-between transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0`}>
+        <div className="fixed top-0 left-0 h-screen w-full lg:w-64 bg-gradient-to-b from-gray-800 to-gray-900 text-white shadow-lg flex flex-col justify-between z-10">
             <div className="flex flex-col items-center mt-6">
-                <button className="lg:hidden text-white text-2xl mb-6" onClick={toggleSidebar}>
-                    <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
-                </button>
-                <div className="w-50 h-40 mb-5">
+                <div className="w-32 h-32 mb-5">
                     <img
                         src="/images/photo dip.png"
                         alt="Dip Pandey"
-                        className="rounded-full w-full h-full border-1.3 border-transparent-200 shadow-lg"
+                        className="rounded-full w-full h-full border-2 border-gray-300 shadow-lg"
                     />
                 </div>
-                <div className="text-center font-bold text-2xl mb-2">
+                <div className="text-center font-bold text-xl mb-2 lg:text-2xl">
                     Dip Pandey
                 </div>
                 <div className="flex space-x-4 mb-4">
@@ -40,7 +36,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         href="/Profile.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-white bg-transparent-600 px-3 py-2 rounded shadow hover:bg-gray-500 transition duration-100"
+                        className="text-sm text-white bg-gray-600 px-3 py-2 rounded shadow hover:bg-gray-500 transition duration-100"
                     >
                         <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
                         View Resume

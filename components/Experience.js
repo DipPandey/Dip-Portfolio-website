@@ -70,19 +70,19 @@ const useVisibility = () => {
 const Experience = () => {
     const ref = useVisibility();
     return (
-        <section id="experience" ref={ref} className="animated opacity-0">
-            <div className="container mx-auto px-4 py-10">
-                <h2 className="text-4xl font-bold mb-12 text-blue-200 text-center">Experience</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="experience" ref={ref} className="animated opacity-0 h-screen overflow-y-auto">
+            <div className="container mx-auto px-4 py-8">
+                <h2 className="text-3xl font-bold mb-8 text-blue-200 text-center">Experience</h2>
+                <div className="flex flex-col gap-6">
                     {experiences.map((exp, index) => (
                         <a
                             key={index}
                             href={exp.website}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="transform transition-transform duration-300 hover:scale-105"
+                            className="transform transition-transform duration-300 hover:scale-102"
                         >
-                            <div className="bg-gray-800 bg-opacity-80 p-6 shadow-lg rounded-lg cursor-pointer hover:bg-gray-700 transition duration-300 ease-in-out">
+                            <div className="bg-gray-800 bg-opacity-80 p-2 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-95 hover:shadow-xl hover:shadow-gray-200">
                                 <h3 className="text-2xl font-bold mb-2 text-white">{exp.role} at {exp.company || exp.project}</h3>
                                 <p className="text-gray-300 mb-2">{exp.description}</p>
                                 <p className="text-gray-500 mb-4">{exp.duration}</p>
@@ -96,10 +96,10 @@ const Experience = () => {
                         </a>
                     ))}
                 </div>
-                <h2 className="text-4xl font-bold mb-12 text-blue-200 text-center mt-16">Freelance Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <h2 className="text-3xl font-bold mb-8 text-blue-200 text-center mt-8">Freelance Projects</h2>
+                <div className="flex flex-col gap-6">
                     {freelanceProjects.map((project, index) => (
-                        <div key={index} className="bg-gray-800 bg-opacity-80 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
+                        <div key={index} className="bg-gray-800 bg-opacity-80 p-2 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-95 hover:shadow-xl hover:shadow-blue-200">
                             <h3 className="text-2xl font-bold mb-2 text-white">{project.role} - {project.project}</h3>
                             <p className="text-gray-300 mb-2">{project.description}</p>
                             <p className="text-gray-500 mb-4">{project.duration}</p>
