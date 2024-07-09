@@ -65,20 +65,24 @@ const Projects = () => {
                 <div className="flex flex-col gap-6">
                     {projects.map((project, index) => (
                         <div key={index} className="bg-gray-800 bg-opacity-50 p-6 shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-95 hover:shadow-xl hover:shadow-blue-100">
-                            <img src={project.imageUrl} alt={project.title} className="rounded-lg mb-1" />
-                            <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                            <p className="text-gray-300 mb-4">{project.description}</p>
-                            <div className="mb-4">
-                                <h4 className="text-xl font-bold text-blue-300">Tech Stack Used:</h4>
-                                <div className="flex flex-wrap gap-2 mt-2">
-                                    {project.techStack.map((tech, idx) => (
-                                        <img key={idx} src={tech.icon} alt={tech.name} title={tech.name} className="h-8 w-8" />
-                                    ))}
+                            <div className="flex items-center gap-4">
+                                <img src={project.imageUrl} alt={project.title} className="w-24 h-24 object-cover rounded-md" />
+                                <div>
+                                    <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                                    <p className="text-gray-300 mb-4">{project.description}</p>
+                                    <div className="mb-4">
+                                        <h4 className="text-xl font-bold text-blue-300">Tech Stack Used:</h4>
+                                        <div className="flex flex-wrap gap-2 mt-2">
+                                            {project.techStack.map((tech, idx) => (
+                                                <img key={idx} src={tech.icon} alt={tech.name} title={tech.name} className="h-8 w-8" />
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="flex space-x-4">
+                                        <a href={project.demoUrl} className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                        <a href={project.repoUrl} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex space-x-4">
-                                <a href={project.demoUrl} className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                                <a href={project.repoUrl} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
                             </div>
                         </div>
                     ))}
