@@ -44,7 +44,7 @@ const Projects = () => {
         {
             title: 'AI-Powered Quiz Buddy',
             description: 'An AI-powered web application that generates quizzes based on user input and provides explanations on various topics.',
-            imageUrl: '/images/ai-powered-quiz-buddy.png',
+            imageUrl: '/images/aiQuiz.png',
             demoUrl: 'https://reliable-bunny-3ac1f8.netlify.app/',
             repoUrl: 'https://github.com/DipPandey/my-study-buddy',
             techStack: [
