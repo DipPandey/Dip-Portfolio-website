@@ -3,7 +3,7 @@ const Projects = () => {
         {
             title: 'Health Appointment Scheduler',
             description: 'A web application that allows patients to schedule appointments with healthcare providers efficiently. Built with Node.js, Express, and MongoDB.',
-            imageUrl: '/images/health-appointment-scheduler.png',
+            imageUrl: '/images/HAS.png',
             demoUrl: 'https://your-live-demo-url.com',
             repoUrl: 'https://github.com/DipPandey/Helalth-Appointment-Scheduler',
             techStack: [
@@ -19,7 +19,7 @@ const Projects = () => {
         {
             title: 'Next.js Portfolio Website',
             description: 'A personal portfolio website built with Next.js and Nextra to showcase my projects and skills.',
-            imageUrl: '/images/portfolio-website.png',
+            imageUrl: '/images/Dip page.png',
             demoUrl: 'https://dip-portfolio-website.vercel.app/',
             repoUrl: 'https://github.com/DipPandey/Dip-Portfolio-website',
             techStack: [
@@ -65,7 +65,7 @@ const Projects = () => {
                 <div className="flex flex-col gap-6">
                     {projects.map((project, index) => (
                         <div key={index} className="bg-gray-800 bg-opacity-50 p-6 shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-95 hover:shadow-xl hover:shadow-blue-100">
-                            <img src={project.imageUrl} alt={project.title} className="rounded-lg mb-4" />
+                            <img src={project.imageUrl} alt={project.title} className="rounded-lg mb-1" />
                             <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                             <p className="text-gray-300 mb-4">{project.description}</p>
                             <div className="mb-4">
