@@ -58,7 +58,7 @@ const freelanceProjects = [
     },
     {
         role: 'Back-End Developer',
-        project: 'API for Web Applicaiton',
+        project: 'API for Web Application',
         description: 'Developed a robust and scalable RESTful API for a mobile application, including user management and real-time data processing. Built with Node.js and Express to handle server-side logic. Implemented MongoDB for flexible and scalable data storage. Utilized Socket.io for real-time communication between the server and mobile clients. Ensured secure data transmission with JWT authentication. Conducted load testing to ensure the API could handle high traffic volumes.',
         duration: 'Nov 2021 - Dec 2021',
         skills: ['Node.js', 'Express', 'MongoDB', 'Socket.io'],
