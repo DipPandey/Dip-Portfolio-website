@@ -42,6 +42,16 @@ const skills = {
         { name: 'Docker', icon: 'https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white' },
         { name: 'Webpack', icon: 'https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black' },
         { name: 'Figma', icon: 'https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white' }
+    ],
+    'Soft Skills': [
+        { name: 'Team Collaboration', icon: 'https://img.shields.io/badge/Team_Collaboration-FFD700?style=flat-square&logo=teams&logoColor=black' },
+        { name: 'Communication', icon: 'https://img.shields.io/badge/Communication-008000?style=flat-square&logo=communication&logoColor=white' },
+        { name: 'Independent Problem Solving', icon: 'https://img.shields.io/badge/Problem_Solving-FF4500?style=flat-square&logo=problem-solving&logoColor=white' },
+        { name: 'Time Management', icon: 'https://img.shields.io/badge/Time_Management-1E90FF?style=flat-square&logo=time-management&logoColor=white' },
+        { name: 'Adaptability', icon: 'https://img.shields.io/badge/Adaptability-32CD32?style=flat-square&logo=adaptability&logoColor=white' },
+        { name: 'Leadership', icon: 'https://img.shields.io/badge/Leadership-DC143C?style=flat-square&logo=leadership&logoColor=white' },
+        { name: 'Creativity', icon: 'https://img.shields.io/badge/Creativity-FFD700?style=flat-square&logo=creativity&logoColor=black' },
+        { name: 'Continious Learning', icon: 'https://img.shields.io/badge/Creativity-FFD700?style=flat-square&logo=creativity&logoColor=black' }
     ]
 };
 

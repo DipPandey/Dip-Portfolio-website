@@ -353,5 +353,31 @@ body, html {
     .project-card:hover img {
         transform: scale(1.05);
     }
+/* Tailwind CSS custom classes */
+@layer utilities {
+    .max-w-full {
+        max-width: 100%;
+    }
+
+    .lg\:ml-64 {
+        margin-left: 16rem;
+    }
+
+    .p-4 {
+        padding: 1rem;
+    }
+
+    .lg\:p-6 {
+        padding: 1.5rem;
+    }
+
+    .overflow-x-hidden {
+        overflow-x: hidden;
+    }
+
+    .flex-1 {
+        flex: 1;
+    }
+}
 
 
