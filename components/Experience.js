@@ -4,7 +4,7 @@ const experiences = [
     {
         role: 'Backup Manager Software Developer',
         project: 'Omnicore Project',
-        description: 'Developed a backup manager software as part of the Omnicore project at the University of Tasmania, ensuring data security and reliability for university systems. Implemented automated backup schedules using Python scripts and optimized storage using PostgreSQL. Designed a user-friendly interface with Django for seamless interaction. Collaborated with a cross-functional team to integrate AWS services for scalable and secure backup solutions. Conducted regular code reviews and implemented CI/CD pipelines for efficient deployment.',
+        description: 'Developed Front-End for a backup manager software as part of the Omnicore project at the University of Tasmania, ensuring data security and reliability for university systems. Implemented automated backup schedules using Python scripts and optimized storage using PostgreSQL. Designed a user-friendly interface with Django for seamless interaction. Collaborated with a cross-functional team to integrate AWS services for scalable and secure backup solutions. Conducted regular code reviews and implemented CI/CD pipelines for efficient deployment.',
         duration: 'Aug 2022 - May 2023',
         website: 'https://omnicore.com.au',
         skills: ['HTML', 'CSS', 'Python', 'PHP', 'Django', 'PostgreSQL', 'AWS'],

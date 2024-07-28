@@ -55,6 +55,20 @@ const Projects = () => {
                 { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white' },
                 { name: 'OpenAI', icon: 'https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white' }
             ]
+        },
+        {
+            title: 'Stock Manager',
+            description: 'A  stock management application I made for a local Tilling business that tracks inventory, orders, and shipments with a user-friendly interface.',
+            imageUrl: 'https://via.placeholder.com/150',
+            demoUrl: 'https://dip-stockmanager-app.netlify.app',
+            repoUrl: 'https://github.com/DipPandey/Stock-managment-project',
+            techStack: [
+                { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
+                { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white' },
+                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
+                { name: 'Node.js', icon: 'https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white' },
+                { name: 'Express', icon: 'https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white' }
+            ]
         }
     ];
 
