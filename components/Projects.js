@@ -59,8 +59,8 @@ const Projects = () => {
         {
             title: 'Stock Manager',
             description: 'A  stock management application I made for a local Tilling business that tracks inventory, orders, and shipments with a user-friendly interface.',
-            imageUrl: 'https://via.placeholder.com/150',
-            demoUrl: 'https://dip-stockmanager-app.netlify.app',
+            imageUrl: '/images/stock.png',
+            demoUrl: 'https://dipstockmanager.netlify.app',
             repoUrl: 'https://github.com/DipPandey/Stock-managment-project',
             techStack: [
                 { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
