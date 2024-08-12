@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="bg-gray-800 bg-opacity-90 backdrop-filter backdrop-blur-lg rounded-lg p-6 lg:p-8 shadow-xl flex flex-col lg:flex-row items-center">
                     <div className="lg:w-1/4 mb-3 lg:mb-0 lg:mr-6">
                         <img
-                            src="/images/new.png"
+                            src="/images/newdip.png"
                             alt="Dip Pandey"
                             className="animated-image rounded-full w-full border-1 border-transparent-400 shadow-lg"
                         />
