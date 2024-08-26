@@ -39,15 +39,7 @@ const freelanceProjects = [
         skills: ['React', 'Node.js', 'Express', 'MongoDB', 'Framer Motion', 'Vercel'],
         image: '/images/mostafa.png'
     },
-    {
-        role: 'Front-End Developer',
-        project: 'Portfolio Website',
-        description: 'Created a personal portfolio website to showcase projects and skills, with an emphasis on responsive design and smooth animations. Utilized Next.js for server-side rendering and improved SEO. Styled the website with Tailwind CSS for a modern and consistent look. Implemented animations using Framer Motion to enhance user interaction. Integrated dynamic content loading to improve site performance. Deployed the website on Vercel for continuous deployment and scalability.',
-        duration: 'Sep 2021 - Oct 2021',
-        website: 'https://dip-portfolio-website.vercel.app/',
-        skills: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-        image: '/images/Dip page.png'
-    },
+   
     {
         role: 'Full-Stack Developer',
         project: 'E-commerce Platform',
@@ -63,7 +55,17 @@ const freelanceProjects = [
         duration: 'Nov 2021 - Dec 2021',
         skills: ['Node.js', 'Express', 'MongoDB', 'Socket.io'],
         image: '/images/HAS.png'
+    },
+    {
+        role: 'Full-Stack Developer',
+        project: 'Stock Management Software',
+        description: 'Developed a comprehensive stock management application to track inventory, manage stock levels, and handle order processing. Built with Next.js for the frontend, and Node.js with Express on the backend. Integrated MongoDB for efficient data management. Implemented secure authentication using JWT and OAuth. The software also includes features for real-time inventory updates and stock order management with a focus on scalability and performance.',
+        duration: 'July 2024 - Aug 2024',
+        website: 'https://dipstockmanager.netlify.app/',
+        skills: ['Next.js', 'Node.js', 'Express', 'MongoDB', 'JWT', 'OAuth'],
+        image: '/images/stock.png'
     }
+
 ];
 
 const useVisibility = () => {

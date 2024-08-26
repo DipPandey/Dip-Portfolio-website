@@ -7,11 +7,11 @@ const skills = {
         { name: 'TypeScript', icon: 'https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white' },
         { name: 'HTML', icon: 'https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white' },
         { name: 'CSS', icon: 'https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white' },
-        { name: 'Sass', icon: 'https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white' },
         { name: 'PHP', icon: 'https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white' },
         { name: 'GraphQL', icon: 'https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white' },
         { name: 'C', icon: 'https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white' },
-        { name: 'C++', icon: 'https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white' }
+        { name: 'C++', icon: 'https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white' },
+        { name: 'Python', icon: 'https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white' }
     ],
     'Libraries & Frameworks': [
         { name: 'React', icon: 'https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB' },
@@ -25,7 +25,31 @@ const skills = {
         { name: 'Styled Components', icon: 'https://img.shields.io/badge/Styled_Components-DB7093?style=flat-square&logo=styled-components&logoColor=white' },
         { name: 'Framer Motion', icon: 'https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white' },
         { name: 'Anime.js', icon: 'https://img.shields.io/badge/Anime.js-000000?style=flat-square&logo=anime.js&logoColor=white' },
-        { name: 'Timber for WordPress', icon: 'https://img.shields.io/badge/Timber-000000?style=flat-square&logo=timber&logoColor=white' }
+        { name: 'Timber for WordPress', icon: 'https://img.shields.io/badge/Timber-000000?style=flat-square&logo=timber&logoColor=white' },
+        // Newly Added Libraries
+        { name: 'Redux', icon: 'https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white' },
+        { name: 'GraphQL', icon: 'https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white' },
+        { name: 'Django', icon: 'https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white' },
+        { name: 'Laravel', icon: 'https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white' },
+        { name: 'Vue.js', icon: 'https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue-dot-js&logoColor=white' },
+        { name: 'Angular', icon: 'https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white' },
+        { name: 'Flutter', icon: 'https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white' },
+        { name: 'Bootstrap', icon: 'https://img.shields.io/badge/Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white' }
+    ],
+    'Backend Skills': [
+        { name: 'RESTful APIs', icon: 'https://img.shields.io/badge/REST_API-008000?style=flat-square&logo=api&logoColor=white' },
+        { name: 'GraphQL APIs', icon: 'https://img.shields.io/badge/GraphQL-FF4081?style=flat-square&logo=graphql&logoColor=white' },
+        { name: 'JWT Authentication', icon: 'https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white' },
+        { name: 'OAuth', icon: 'https://img.shields.io/badge/OAuth-0000FF?style=flat-square&logo=oauth&logoColor=white' },
+        { name: 'Database Schemas', icon: 'https://img.shields.io/badge/Database_Schemas-4E4E50?style=flat-square&logo=database&logoColor=white' },
+        { name: 'SQL/NoSQL Databases', icon: 'https://img.shields.io/badge/SQL/NoSQL-4CAF50?style=flat-square&logo=database&logoColor=white' },
+        { name: 'API Endpoint Management', icon: 'https://img.shields.io/badge/API_Management-3E6E00?style=flat-square&logo=api&logoColor=white' },
+        { name: 'Version Control (Git)', icon: 'https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white' },
+        { name: 'CI/CD Pipelines', icon: 'https://img.shields.io/badge/CI/CD-00A2E8?style=flat-square&logo=continuousintegration&logoColor=white' },
+        { name: 'Serverless Architecture', icon: 'https://img.shields.io/badge/Serverless-FF6600?style=flat-square&logo=serverless&logoColor=white' },
+        { name: 'Data Structures & Algorithms (DSA)', icon: 'https://img.shields.io/badge/DSA-3A539B?style=flat-square&logo=algorithms&logoColor=white' },
+        { name: 'Express.js', icon: 'https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white' },
+        { name: 'Server Handling', icon: 'https://img.shields.io/badge/Server_Handling-2E8B57?style=flat-square&logo=server&logoColor=white' }
     ],
     'Tools & Platforms': [
         { name: 'Visual Studio', icon: 'https://img.shields.io/badge/Visual_Studio-5C2D91?style=flat-square&logo=visual%20studio&logoColor=white' },
@@ -83,3 +107,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
