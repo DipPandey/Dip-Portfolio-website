@@ -69,6 +69,20 @@ const Projects = () => {
                 { name: 'Node.js', icon: 'https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white' },
                 { name: 'Express', icon: 'https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white' }
             ]
+        },
+        {
+            title: 'Applify Attraction',
+            description: 'A fun chat app that helps men improve their texting game with women to build attraction and keep conversations fun and light.',
+            imageUrl: '/images/applify-attraction.png',
+            demoUrl: 'https://applifyattraction.netlify.app/',
+            repoUrl: 'https://github.com/DipPandey/applify-attraction/tree/main',
+            techStack: [
+                { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
+                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
+                { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white' },
+                { name: 'OpenAI', icon: 'https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white' },
+                { name: 'Node.js', icon: 'https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white' }
+            ]
         }
     ];
 
