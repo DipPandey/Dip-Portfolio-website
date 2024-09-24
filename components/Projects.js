@@ -71,6 +71,23 @@ const Projects = () => {
             ]
         },
         {
+            title: 'Secure Login & Permissions Web App',
+            description: `A full-stack web application built on an Azure Virtual Machine using Ubuntu, PHP, and MySQL. This project demonstrates secure user authentication, role-based permissions, and OAuth integration. The app features a registration and login system with password hashing, session management, and secure API communication. It includes an admin panel for managing user roles, access logs, and a Discord account link page using OAuth.`,
+            imageUrl: '/images/secure-login.png',  // Replace with the actual image URL
+            demoUrl: 'https://your-azure-demo-url.com', // Replace with your demo URL
+            repoUrl: 'https://github.com/DipPandey/Web-App-with-OAuth-and-Permissions-and-API-use-',
+            techStack: [
+                { name: 'PHP', icon: 'https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white' },
+                { name: 'MySQL', icon: 'https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white' },
+                { name: 'OAuth', icon: 'https://img.shields.io/badge/OAuth-0000FF?style=flat-square&logo=oauth&logoColor=white' },
+                { name: 'Azure', icon: 'https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoft-azure&logoColor=white' },
+                { name: 'Ubuntu', icon: 'https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white' },
+                { name: 'Guzzle', icon: 'https://img.shields.io/badge/Guzzle-000000?style=flat-square&logo=guzzle&logoColor=white' },
+                { name: 'MVC', icon: 'https://img.shields.io/badge/MVC-007ACC?style=flat-square&logo=mvc&logoColor=white' }
+            ]
+        },
+
+        {
             title: 'Applify Attraction',
             description: 'A fun chat app that helps men improve their texting game with women to build attraction and keep conversations fun and light.',
             imageUrl: '/images/applify-attraction.png',
