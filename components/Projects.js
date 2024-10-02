@@ -1,6 +1,21 @@
 const Projects = () => {
     const projects = [
         {
+            title: 'CourseStore',
+            description: `An web application for selling courses, including features like video syllabus, user accounts, and payment integration using Stripe. The app allows users to browse courses, view details, and securely purchase them. It also includes a dynamic cart and order tracking system, built with modern web technologies.`,
+            imageUrl: '/images/courseStore.png',  // Replace with the actual image URL
+            demoUrl: 'https://learncourse-ai.netlify.app/',  // Replace with your live demo URL
+            repoUrl: 'https://github.com/DipPandey/course-store',  // Replace with your GitHub repository URL
+            techStack: [
+                { name: 'React', icon: 'https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB' },
+                { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
+                { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white' },
+                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
+                { name: 'Stripe', icon: 'https://img.shields.io/badge/Stripe-008CDD?style=flat-square&logo=stripe&logoColor=white' }
+            ]
+        },
+
+        {
             title: 'Health Appointment Scheduler',
             description: 'A web application that allows patients to schedule appointments with healthcare providers efficiently. Built with Node.js, Express, and MongoDB.',
             imageUrl: '/images/HAS.png',
