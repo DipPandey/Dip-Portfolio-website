@@ -24,7 +24,7 @@ const Resume = () => {
     return (
         <div className="fixed top-0 left-100 m-10">
             <a
-                href="/Profile.pdf"
+                href="/Dip SE resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative text-lg group hover:text-blue-500"
