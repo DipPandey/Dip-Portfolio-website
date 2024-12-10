@@ -53,9 +53,16 @@ const Home = () => {
                                     Email: <a href="mailto:dippandey61@outlook.com" className="text-blue-300 hover:underline">dippandey61@outlook.com</a>
                                 </p>
                             </div>
-                            <div className="flex space-x-4">
-                                <a href="https://github.com/DipPandey" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+                            <div className="flex space-x-4 items-center">
+                                {/* Highlighted GitHub Link */}
+                                <a
+                                    href="https://github.com/DipPandey"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-white bg-black px-3 py-2 rounded-lg flex items-center space-x-2 transition transform hover:scale-105 hover:bg-gray-900 focus:outline-none"
+                                >
                                     <FontAwesomeIcon icon={faGithub} size="lg" />
+                                    <span className="font-bold">GitHub</span>
                                 </a>
                                 <a href="https://www.linkedin.com/in/dip-pandey-a402b81b4/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
                                     <FontAwesomeIcon icon={faLinkedin} size="lg" />

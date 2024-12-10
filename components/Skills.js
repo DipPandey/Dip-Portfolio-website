@@ -26,7 +26,6 @@ const skills = {
         { name: 'Framer Motion', icon: 'https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white' },
         { name: 'Anime.js', icon: 'https://img.shields.io/badge/Anime.js-000000?style=flat-square&logo=anime.js&logoColor=white' },
         { name: 'Timber for WordPress', icon: 'https://img.shields.io/badge/Timber-000000?style=flat-square&logo=timber&logoColor=white' },
-        // Newly Added Libraries
         { name: 'Redux', icon: 'https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white' },
         { name: 'GraphQL', icon: 'https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white' },
         { name: 'Django', icon: 'https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white' },
@@ -83,18 +82,43 @@ const Skills = () => {
     const ref = useVisibility();
 
     return (
-        <section id="skills" ref={ref} className="animated opacity-0 py-6 lg:py-6 bg-gray-900 text-blue-100">
+        <section
+            id="skills"
+            ref={ref}
+            className="animated opacity-0 py-10 lg:py-14 relative overflow-hidden text-blue-100"
+        >
+            {/* Animated gradient background */}
+            <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#1a1f2f] via-[#151929] to-[#0f141f] animate-gradient-flow"></div>
+
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-8 text-blue-200 text-center">Skills</h2>
-                <div className="space-y-6">
+                <h2 className="text-center text-4xl font-extrabold mb-12 uppercase tracking-wider">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-blue-500 to-purple-400 drop-shadow-md">
+                        Skills
+                    </span>
+                </h2>
+
+                <div className="space-y-8">
                     {Object.keys(skills).map((category, index) => (
-                        <div key={index} className="bg-gray-800 bg-opacity-80 p-4 shadow-lg rounded-lg">
-                            <h3 className="text-xl font-bold mb-2 text-blue-200">{category}</h3>
-                            <div className="flex space-x-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
+                        <div
+                            key={index}
+                            className="bg-black/30 backdrop-blur-md p-6 rounded-lg shadow-xl border border-white/10 transition-all duration-500 hover:shadow-blue-500/20"
+                        >
+                            <h3 className="text-2xl font-bold mb-4 text-blue-200 uppercase tracking-wider relative">
+                                {category}
+                                <span className="absolute -bottom-1 left-0 w-1/3 h-[2px] bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse"></span>
+                            </h3>
+                            <div className="flex space-x-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 hover:scrollbar-thumb-blue-500 transition-colors duration-300">
                                 {skills[category].map((skill, skillIndex) => (
-                                    <div key={skillIndex} className="bg-gray-700 bg-opacity-80 p-2 shadow-md rounded-md min-w-max transform transition-transform duration-200 hover:scale-105">
+                                    <div
+                                        key={skillIndex}
+                                        className="
+                                            bg-[#1f2b3a] p-2 shadow-md rounded-md min-w-max 
+                                            transform transition-transform duration-300 hover:scale-105 hover:shadow-blue-500/30 hover:bg-[#223043]
+                                            border border-transparent hover:border-blue-500/50
+                                        "
+                                    >
                                         <img src={skill.icon} alt={skill.name} className="w-6 h-6 mb-1 inline-block" />
-                                        <p className="text-gray-300 inline-block text-sm">{skill.name}</p>
+                                        <p className="text-gray-300 inline-block text-sm font-semibold whitespace-nowrap">{skill.name}</p>
                                     </div>
                                 ))}
                             </div>
@@ -102,9 +126,26 @@ const Skills = () => {
                     ))}
                 </div>
             </div>
+
+            <style jsx>{`
+                @keyframes gradientFlow {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+                .animate-gradient-flow {
+                    background-size: 400% 400%;
+                    animation: gradientFlow 15s ease infinite;
+                }
+            `}</style>
         </section>
     );
 };
 
 export default Skills;
-
