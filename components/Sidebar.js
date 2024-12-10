@@ -101,6 +101,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </nav>
             <div className="p-6 text-center text-gray-400 text-sm">
                 &copy; 2024 Dip Pandey. All rights reserved.
+                Made using React, Next.js, Styled with Tailwind CSS.
+                Deployed using vercel
             </div>
         </div>
     );

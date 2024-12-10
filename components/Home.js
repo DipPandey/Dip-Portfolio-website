@@ -34,9 +34,8 @@ const Home = () => {
                             both front-end and back-end development, cultivating a strong foundation in software engineering.
                             Driven by a desire to solve real-world problems through technology, I have worked on numerous
                             projects that blend creativity with functionality. As I continue to expand my expertise, my
-                            aspiration is to become a full-stack engineer, always eager to learn and innovate. Whether it's
-                            developing intuitive user interfaces or robust server-side solutions, I am committed to leveraging
-                            my skills to create impactful and efficient digital solutions.
+                            aspiration is to become a full-stack engineer, always eager to learn and innovate. I specialize in
+                            building high-performance web applications that enhance user experiences and drive business growth.
                         </p>
                         <div className="mt-6 flex flex-col items-center lg:items-start">
                             <div className="flex items-center space-x-4 mb-4">
