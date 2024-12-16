@@ -56,17 +56,30 @@ const Home = () => {
                             With a strong foundation in both front-end and back-end development, I specialize in building
                             high-performance web applications that enhance user satisfaction and drive results. From
                             migrating to Tasmania to pursue my IT degree at UTAS, to tackling real-world challenges with
-                            AWS, Next.js, and Node.js, I continuously seek to deliver value through innovative solutions.
+                            AWS, Next.js, and Node.js, MongoDb, Mysql, API management, I continuously seek to deliver value through innovative solutions.
                         </p>
 
                         {/* Highlights / Achievements */}
                         <div className="mt-4 text-gray-200 text-sm leading-relaxed break-words">
                             <h4 className="font-bold text-blue-300 uppercase tracking-wider mb-2">Highlights:</h4>
                             <ul className="list-disc list-inside space-y-1 text-gray-300">
-                                <li>Optimized page load times by over 20%, boosting user engagement.</li>
-                                <li>Implemented secure, scalable APIs, enhancing product reliability.</li>
-                                <li>Collaborated in agile teams, delivering features ahead of schedule.</li>
-                                <li>Continuously learning cutting-edge tools to stay industry-ready.</li>
+                                <li>Optimized page load times by over 20% in applications like <em>CourseStore</em>, boosting user engagement and improving SEO performance.</li>
+                                <li>Implemented secure, scalable APIs for applications such as <em>Stock Manager</em>, ensuring seamless third-party integrations and product reliability.</li>
+                                <li>Designed and developed responsive front-end interfaces with React and Next.js for projects like <em>AI-Powered Quiz Buddy</em>, enhancing user experience across devices.</li>
+                                <li>Architected and maintained robust database systems (e.g., MongoDB, PostgreSQL) for managing complex data relationships in applications like <em>Health Appointment Scheduler</em>.</li>
+                                <li>Automated CI/CD pipelines using tools like GitHub Actions and Jenkins, streamlining deployment processes for scalable apps such as <em>Secure Login & Permissions Web App</em>.</li>
+                                <li>Integrated cloud services (e.g., AWS, Azure) for hosting and scaling full-stack applications, ensuring cost-effective and reliable deployments for platforms like <em>Next.js Portfolio Website</em>.</li>
+                                <li>Enhanced application performance through caching strategies, load balancing, and server-side optimizations in apps such as <em>Road Network Shortest Path</em>.</li>
+                                <li>Implemented advanced authentication and authorization mechanisms (e.g., JWT, OAuth) for secure data management in applications like <em>Secure Login & Permissions Web App</em>.</li>
+                                <li>Collaborated with cross-functional teams in agile environments, delivering high-quality features ahead of schedule for client-focused apps like <em>Applify Attraction</em>.</li>
+                                <li>Built reusable components and modular codebases for scalable development in projects like <em>AI-Powered Quiz Buddy</em>.</li>
+                                <li>Conducted thorough code reviews and implemented unit/integration testing to ensure code quality and reliability in real-world applications.</li>
+                                <li>Utilized DevOps best practices, such as monitoring and alerting (e.g., Prometheus, Grafana), to maintain system uptime and monitor health in cloud-hosted applications.</li>
+                                <li>Mentored junior developers and collaborated with peers, fostering a collaborative team environment and accelerating project delivery.</li>
+                                <li>Explored and applied artificial intelligence tools, as in <em>AI-Powered Quiz Buddy</em>, to enhance features like dynamic quiz generation and data-driven analytics.</li>
+                                <li>Developed complete, fully-fledged full-stack applications, including <em>CourseStore</em>, <em>Stock Manager</em>, and <em>Secure Login & Permissions Web App</em>, showcasing expertise in React, Node.js, MongoDB, and modern web technologies.</li>
+                                <li>Continuously learning cutting-edge technologies and frameworks, including OpenAI, Tailwind CSS, and GraphQL, to stay industry-ready and maximize productivity.</li>
+
                             </ul>
                         </div>
 
