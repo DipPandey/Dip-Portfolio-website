@@ -1,4 +1,4 @@
-// Home.js
+import { useState } from 'react';
 import useVisibility from './useVisibility';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -6,6 +6,28 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     const ref = useVisibility();
+    const [showAll, setShowAll] = useState(false);
+
+    const toggleShowAll = () => setShowAll(!showAll);
+
+    const highlights = [
+        "Optimized page load times by over 20% in applications like CourseStore, boosting user engagement and improving SEO performance.",
+        "Implemented secure, scalable APIs for applications such as Stock Manager, ensuring seamless third-party integrations and product reliability.",
+        "Designed and developed responsive front-end interfaces with React and Next.js for projects like AI-Powered Quiz Buddy, enhancing user experience across devices.",
+        "Architected and maintained robust database systems (e.g., MongoDB, PostgreSQL) for managing complex data relationships in applications like Health Appointment Scheduler.",
+        "Automated CI/CD pipelines using tools like GitHub Actions and Jenkins, streamlining deployment processes for scalable apps such as Secure Login & Permissions Web App.",
+        "Integrated cloud services (e.g., AWS, Azure) for hosting and scaling full-stack applications, ensuring cost-effective and reliable deployments for platforms like Next.js Portfolio Website.",
+        "Enhanced application performance through caching strategies, load balancing, and server-side optimizations in apps such as Road Network Shortest Path.",
+        "Implemented advanced authentication and authorization mechanisms (e.g., JWT, OAuth) for secure data management in applications like Secure Login & Permissions Web App.",
+        "Collaborated with cross-functional teams in agile environments, delivering high-quality features ahead of schedule for client-focused apps like Applify Attraction.",
+        "Built reusable components and modular codebases for scalable development in projects like AI-Powered Quiz Buddy.",
+        "Conducted thorough code reviews and implemented unit/integration testing to ensure code quality and reliability in real-world applications.",
+        "Utilized DevOps best practices, such as monitoring and alerting (e.g., Prometheus, Grafana), to maintain system uptime and monitor health in cloud-hosted applications.",
+        "Mentored junior developers and collaborated with peers, fostering a collaborative team environment and accelerating project delivery.",
+        "Explored and applied artificial intelligence tools, as in AI-Powered Quiz Buddy, to enhance features like dynamic quiz generation and data-driven analytics.",
+        "Developed complete, fully-fledged full-stack applications, including CourseStore, Stock Manager, and Secure Login & Permissions Web App, showcasing expertise in React, Node.js, MongoDB, and modern web technologies.",
+        "Continuously learning cutting-edge technologies and frameworks, including OpenAI, Tailwind CSS, and GraphQL, to stay industry-ready and maximize productivity.",
+    ];
 
     return (
         <section
@@ -17,7 +39,6 @@ const Home = () => {
             <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#0f172a] via-[#111827] to-[#1f2937] animate-gradient-flow"></div>
 
             <div className="container mx-auto px-4 py-6 lg:py-10 overflow-x-hidden">
-                {/* Increased px to 4 for consistency and ensure enough padding */}
                 <div
                     className="
                     bg-gray-800 bg-opacity-90 backdrop-filter backdrop-blur-lg 
@@ -63,24 +84,18 @@ const Home = () => {
                         <div className="mt-4 text-gray-200 text-sm leading-relaxed break-words">
                             <h4 className="font-bold text-blue-300 uppercase tracking-wider mb-2">Highlights:</h4>
                             <ul className="list-disc list-inside space-y-1 text-gray-300">
-                                <li>Optimized page load times by over 20% in applications like <em>CourseStore</em>, boosting user engagement and improving SEO performance.</li>
-                                <li>Implemented secure, scalable APIs for applications such as <em>Stock Manager</em>, ensuring seamless third-party integrations and product reliability.</li>
-                                <li>Designed and developed responsive front-end interfaces with React and Next.js for projects like <em>AI-Powered Quiz Buddy</em>, enhancing user experience across devices.</li>
-                                <li>Architected and maintained robust database systems (e.g., MongoDB, PostgreSQL) for managing complex data relationships in applications like <em>Health Appointment Scheduler</em>.</li>
-                                <li>Automated CI/CD pipelines using tools like GitHub Actions and Jenkins, streamlining deployment processes for scalable apps such as <em>Secure Login & Permissions Web App</em>.</li>
-                                <li>Integrated cloud services (e.g., AWS, Azure) for hosting and scaling full-stack applications, ensuring cost-effective and reliable deployments for platforms like <em>Next.js Portfolio Website</em>.</li>
-                                <li>Enhanced application performance through caching strategies, load balancing, and server-side optimizations in apps such as <em>Road Network Shortest Path</em>.</li>
-                                <li>Implemented advanced authentication and authorization mechanisms (e.g., JWT, OAuth) for secure data management in applications like <em>Secure Login & Permissions Web App</em>.</li>
-                                <li>Collaborated with cross-functional teams in agile environments, delivering high-quality features ahead of schedule for client-focused apps like <em>Applify Attraction</em>.</li>
-                                <li>Built reusable components and modular codebases for scalable development in projects like <em>AI-Powered Quiz Buddy</em>.</li>
-                                <li>Conducted thorough code reviews and implemented unit/integration testing to ensure code quality and reliability in real-world applications.</li>
-                                <li>Utilized DevOps best practices, such as monitoring and alerting (e.g., Prometheus, Grafana), to maintain system uptime and monitor health in cloud-hosted applications.</li>
-                                <li>Mentored junior developers and collaborated with peers, fostering a collaborative team environment and accelerating project delivery.</li>
-                                <li>Explored and applied artificial intelligence tools, as in <em>AI-Powered Quiz Buddy</em>, to enhance features like dynamic quiz generation and data-driven analytics.</li>
-                                <li>Developed complete, fully-fledged full-stack applications, including <em>CourseStore</em>, <em>Stock Manager</em>, and <em>Secure Login & Permissions Web App</em>, showcasing expertise in React, Node.js, MongoDB, and modern web technologies.</li>
-                                <li>Continuously learning cutting-edge technologies and frameworks, including OpenAI, Tailwind CSS, and GraphQL, to stay industry-ready and maximize productivity.</li>
-
+                                {highlights.slice(0, showAll ? highlights.length : 5).map((point, index) => (
+                                    <li key={index}>{point}</li>
+                                ))}
                             </ul>
+                            {highlights.length > 5 && (
+                                <button
+                                    onClick={toggleShowAll}
+                                    className="mt-4 text-blue-400 hover:text-blue-500 transition-all"
+                                >
+                                    {showAll ? 'Show Less' : 'See More'}
+                                </button>
+                            )}
                         </div>
 
                         <div className="mt-6 flex flex-col items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-4">
