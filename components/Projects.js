@@ -15,6 +15,35 @@ const Projects = () => {
             ]
         },
         {
+            title: 'Stock Manager',
+            description: 'A stock management application built for a local Tilling business, tracking inventory, orders, and shipments with a user-friendly interface.',
+            imageUrl: '/images/stock.png',
+            demoUrl: 'https://dipstockmanager.netlify.app',
+            repoUrl: 'https://github.com/DipPandey/Stock-managment-project',
+            techStack: [
+                { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
+                { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white' },
+                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
+                { name: 'Node.js', icon: 'https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white' },
+                { name: 'Express', icon: 'https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white' }
+            ]
+        },
+        {
+            title: 'AI-Powered Quiz Buddy',
+            description: 'An AI-powered web application that generates quizzes based on user input and provides explanations on various topics.',
+            imageUrl: '/images/aiQuiz.png',
+            demoUrl: 'https://reliable-bunny-3ac1f8.netlify.app/',
+            repoUrl: 'https://github.com/DipPandey/my-study-buddy',
+            techStack: [
+                { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
+                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
+                { name: 'Node.js', icon: 'https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white' },
+                { name: 'Express', icon: 'https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white' },
+                { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white' },
+                { name: 'OpenAI', icon: 'https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white' }
+            ]
+        },
+        {
             title: 'Health Appointment Scheduler',
             description: 'A web application that allows patients to schedule appointments with healthcare providers efficiently. Built with Node.js, Express, and MongoDB.',
             imageUrl: '/images/HAS.png',
@@ -44,6 +73,21 @@ const Projects = () => {
             ]
         },
         {
+            "title": "YRN Real Estate Website",
+            "description": "A modern, visually appealing, and highly interactive real estate website built using Next.js, Tailwind CSS, and GSAP. The website features parallax animations, smooth scrolling effects, and responsive design. It includes sections like Home, About Us, Projects, Contact, and Why Choose Us, all crafted with dynamic transitions and stunning UI.",
+            "imageUrl": "/images/yrn.png",
+            "demoUrl": "https://yrnrealstate.netlify.app/#home",
+            "repoUrl": "https://github.com/YourRepo/YRN-Real-Estate",
+            "techStack": [
+                { "name": "Next.js", "icon": "https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" },
+                { "name": "React", "icon": "https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" },
+                { "name": "Tailwind CSS", "icon": "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" },
+                { "name": "GSAP", "icon": "https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" },
+                { "name": "Netlify", "icon": "https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white" }
+            ]
+        },
+
+        {
             title: 'Road Network Shortest Path',
             description: 'A project comparing the performance of Dijkstras and A* algorithms for finding the shortest path in a road network.',
             imageUrl: '/images/road-network-shortest-path.png',
@@ -55,35 +99,7 @@ const Projects = () => {
                 { name: 'Matplotlib', icon: 'https://img.shields.io/badge/Matplotlib-000000?style=flat-square&logo=matplotlib&logoColor=white' }
             ]
         },
-        {
-            title: 'AI-Powered Quiz Buddy',
-            description: 'An AI-powered web application that generates quizzes based on user input and provides explanations on various topics.',
-            imageUrl: '/images/aiQuiz.png',
-            demoUrl: 'https://reliable-bunny-3ac1f8.netlify.app/',
-            repoUrl: 'https://github.com/DipPandey/my-study-buddy',
-            techStack: [
-                { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
-                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
-                { name: 'Node.js', icon: 'https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white' },
-                { name: 'Express', icon: 'https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white' },
-                { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white' },
-                { name: 'OpenAI', icon: 'https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white' }
-            ]
-        },
-        {
-            title: 'Stock Manager',
-            description: 'A stock management application built for a local Tilling business, tracking inventory, orders, and shipments with a user-friendly interface.',
-            imageUrl: '/images/stock.png',
-            demoUrl: 'https://dipstockmanager.netlify.app',
-            repoUrl: 'https://github.com/DipPandey/Stock-managment-project',
-            techStack: [
-                { name: 'Next.js', icon: 'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white' },
-                { name: 'MongoDB', icon: 'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white' },
-                { name: 'Tailwind CSS', icon: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white' },
-                { name: 'Node.js', icon: 'https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white' },
-                { name: 'Express', icon: 'https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white' }
-            ]
-        },
+        
         {
             title: 'Secure Login & Permissions Web App',
             description: "A full-stack web application built on an Azure Virtual Machine using Ubuntu, PHP, and MySQL. This project demonstrates secure user authentication, role-based permissions, and OAuth integration. The app features a registration and login system with password hashing, session management, and secure API communication. It includes an admin panel for managing user roles, access logs, and a Discord account link page using OAuth.",
@@ -103,7 +119,7 @@ const Projects = () => {
         {
             title: 'Applify Attraction',
             description: 'A fun chat app that helps men improve their texting game with women to build attraction and keep conversations fun and light.',
-            imageUrl: '/images/applify-attraction.png',
+            imageUrl: '/images/applify.png',
             demoUrl: 'https://applifyattraction.netlify.app/',
             repoUrl: 'https://github.com/DipPandey/applify-attraction/tree/main',
             techStack: [
