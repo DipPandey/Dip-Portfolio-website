@@ -22,7 +22,7 @@ const experiences = [
         company: 'The Thirds',
         description: 'Ensured a responsive and engaging user experience on The Thirds website. Integrated APIs, implemented custom JavaScript features, and improved performance metrics for better client engagement.',
         duration: '2020 - Current',
-        website: 'https://dipburly.wixsite.com/the-thirds',
+        website: 'https://theiiirdsstuidioz.netlify.app/',
         skills: ['Wix', 'HTML', 'CSS', 'JavaScript', 'Updating client portfolio', 'Customizing site and SEOs'],
         image: '/images/thethird.png',
         impact: [
