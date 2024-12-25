@@ -46,7 +46,7 @@ const Projects = () => {
         {
             "title": "The iiirds Studioz",
             "description": "A professional website for a web and video editing company, showcasing services, projects, and client engagement features.",
-            "imageUrl": "/images/theiiird.png",
+            "imageUrl": "/images/logo 1.png",
             "demoUrl": "https://theiiirdsstuidioz.netlify.app/",
             "repoUrl": "https://github.com/DipPandey/theiiirds-studioz",
             "techStack": [
