@@ -57,7 +57,7 @@ const Projects = () => {
                 { "name": "Express", "icon": "https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white" },
                 { "name": "MongoDB", "icon": "https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" }
             ]
-        }
+        },
 
         {
             title: 'Health Appointment Scheduler',
