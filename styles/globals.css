@@ -424,5 +424,20 @@ body, html {
         transform: translate(-50%, -50%) scale(0.5);
     }
 }
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+html {
+    scrollbar-width: none; /* Firefox */
+}
+
+    html::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
 
 
