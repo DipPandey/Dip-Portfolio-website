@@ -44,6 +44,22 @@ const Projects = () => {
             ]
         },
         {
+            "title": "The iiirds Studioz",
+            "description": "A professional website for a web and video editing company, showcasing services, projects, and client engagement features.",
+            "imageUrl": "/images/theiiird.png",
+            "demoUrl": "https://theiiirdsstuidioz.netlify.app/",
+            "repoUrl": "https://github.com/DipPandey/theiiirds-studioz",
+            "techStack": [
+                { "name": "React.js", "icon": "https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white" },
+                { "name": "Next.js", "icon": "https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" },
+                { "name": "Tailwind CSS", "icon": "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" },
+                { "name": "Node.js", "icon": "https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" },
+                { "name": "Express", "icon": "https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white" },
+                { "name": "MongoDB", "icon": "https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" }
+            ]
+        }
+
+        {
             title: 'Health Appointment Scheduler',
             description: 'A web application that allows patients to schedule appointments with healthcare providers efficiently. Built with Node.js, Express, and MongoDB.',
             imageUrl: '/images/HAS.png',
