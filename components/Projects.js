@@ -46,7 +46,7 @@ const Projects = () => {
         {
             "title": "UserLogs Activity Dashboard",
             "description": "A simple signup/login web application with a user dashboard displaying their log activities. Admins can monitor and manage user activities efficiently.",
-            "imageUrl": "/images/activity_dashboard.png",
+            "imageUrl": "/images/log.png",
             "demoUrl": "https://fastidious-licorice-7aa921.netlify.app/",
             "repoUrl": "https://github.com/DipPandey/user-activity-dashboard",
             "techStack": [
