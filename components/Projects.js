@@ -44,6 +44,22 @@ const Projects = () => {
             ]
         },
         {
+            "title": "UserLogs Activity Dashboard",
+            "description": "A simple signup/login web application with a user dashboard displaying their log activities. Admins can monitor and manage user activities efficiently.",
+            "imageUrl": "/images/activity_dashboard.png",
+            "demoUrl": "https://fastidious-licorice-7aa921.netlify.app/",
+            "repoUrl": "https://github.com/DipPandey/user-activity-dashboard",
+            "techStack": [
+                { "name": "React.js", "icon": "https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white" },
+                { "name": "Next.js", "icon": "https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" },
+                { "name": "Tailwind CSS", "icon": "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" },
+                { "name": "Node.js", "icon": "https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" },
+                { "name": "Express", "icon": "https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white" },
+                { "name": "Supabase", "icon": "https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" }
+            ]
+        },
+
+        {
             "title": "The iiirds Studioz",
             "description": "A professional website for a web and video editing company, showcasing services, projects, and client engagement features.",
             "imageUrl": "/images/logo 1.png",
