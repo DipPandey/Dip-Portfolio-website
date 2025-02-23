@@ -29,16 +29,16 @@ const Home = () => {
 
     return (
         <section id="home" ref={ref} className="animated relative overflow-hidden">
-            {/* Background Video Section */}
-            <div className="relative w-full h-[40vh] lg:h-[60vh] flex items-center justify-center">
-                <video
-                    src="/images/intro.mp4"
-                    className="absolute inset-0 w-[70%] h-auto max-h-full object-contain rounded-lg opacity-85"
-                    autoPlay
-                    loop
-                    muted
-                    controls
-                />
+            {/* Embedded YouTube Video */}
+            <div className="relative w-full h-[50vh] lg:h-[75vh] flex items-center justify-center">
+                <iframe
+                    className="absolute inset-0 w-[90%] h-[90%] max-h-full rounded-lg opacity-85"
+                    src="https://www.youtube.com/embed/RpJFaAV9bEo"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
             </div>
 
             {/* Main Content Section */}
