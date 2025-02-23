@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import useVisibility from './useVisibility';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -7,6 +7,14 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
     const ref = useVisibility();
     const [showAll, setShowAll] = useState(false);
+    const [videoLoaded, setVideoLoaded] = useState(false);
+
+    useEffect(() => {
+        const iframe = document.getElementById("youtube-video");
+        if (iframe) {
+            iframe.src += "&autoplay=1&mute=0";
+        }
+    }, []);
 
     const toggleShowAll = () => setShowAll(!showAll);
 
@@ -32,8 +40,9 @@ const Home = () => {
             {/* Embedded YouTube Video */}
             <div className="relative w-full h-[50vh] lg:h-[75vh] flex items-center justify-center">
                 <iframe
+                    id="youtube-video"
                     className="absolute inset-0 w-[90%] h-[90%] max-h-full rounded-lg opacity-85"
-                    src="https://www.youtube.com/embed/RpJFaAV9bEo"
+                    src="https://www.youtube.com/embed/RpJFaAV9bEo?enablejsapi=1"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
