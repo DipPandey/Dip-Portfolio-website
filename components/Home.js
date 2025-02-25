@@ -7,33 +7,21 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
     const ref = useVisibility();
     const [showAll, setShowAll] = useState(false);
-    const [videoLoaded, setVideoLoaded] = useState(false);
 
     useEffect(() => {
         const iframe = document.getElementById("youtube-video");
+
         if (iframe) {
-            iframe.src = "https://www.youtube.com/embed/RpJFaAV9bEo?autoplay=1&mute=0";
+            iframe.src = "https://www.youtube.com/embed/RpJFaAV9bEo?autoplay=1&playsinline=1";
+
+            // Try sending a postMessage to unmute (may not always work due to browser restrictions)
+            setTimeout(() => {
+                iframe.contentWindow?.postMessage('{"event":"command","func":"unMute","args":""}', '*');
+            }, 2000);
         }
     }, []);
 
     const toggleShowAll = () => setShowAll(!showAll);
-
-    const highlights = [
-        "Optimized page load times by over 20% in applications like CourseStore, boosting user engagement and improving SEO performance.",
-        "Implemented secure, scalable APIs for applications such as Stock Manager, ensuring seamless third-party integrations and product reliability.",
-        "Designed and developed responsive front-end interfaces with React and Next.js for projects like AI-Powered Quiz Buddy, enhancing user experience across devices.",
-        "Architected and maintained robust database systems (MongoDB, PostgreSQL) for managing complex data relationships in applications like Health Appointment Scheduler.",
-        "Automated CI/CD pipelines using tools like GitHub Actions and Jenkins, streamlining deployment processes for scalable apps such as Secure Login & Permissions Web App.",
-        "Integrated cloud services (AWS, Azure) for hosting and scaling full-stack applications, ensuring cost-effective and reliable deployments for platforms like Next.js Portfolio Website.",
-        "Enhanced application performance through caching strategies, load balancing, and server-side optimizations in apps such as Road Network Shortest Path.",
-        "Implemented advanced authentication and authorization mechanisms (JWT, OAuth) for secure data management in applications like Secure Login & Permissions Web App.",
-        "Collaborated with cross-functional teams in agile environments, delivering high-quality features ahead of schedule for client-focused apps like Applify Attraction.",
-        "Built reusable components and modular codebases for scalable development in projects like AI-Powered Quiz Buddy.",
-        "Conducted thorough code reviews and implemented unit/integration testing to ensure code quality and reliability in real-world applications.",
-        "Utilized DevOps best practices, such as monitoring and alerting (Prometheus, Grafana), to maintain system uptime and monitor health in cloud-hosted applications.",
-        "Mentored junior developers and collaborated with peers, fostering a collaborative team environment and accelerating project delivery.",
-        "Explored and applied artificial intelligence tools, as in AI-Powered Quiz Buddy, to enhance features like dynamic quiz generation and data-driven analytics.",
-    ];
 
     return (
         <section id="home" ref={ref} className="animated relative overflow-hidden">
@@ -42,10 +30,10 @@ const Home = () => {
                 <iframe
                     id="youtube-video"
                     className="absolute inset-0 w-[90%] h-[90%] max-h-full rounded-lg opacity-85"
-                    src="https://www.youtube.com/embed/RpJFaAV9bEo?autoplay=1&mute=0"
+                    src="https://www.youtube.com/embed/RpJFaAV9bEo?enablejsapi=1&autoplay=1&playsinline=1"
                     title="YouTube video player"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 ></iframe>
             </div>
@@ -70,7 +58,16 @@ const Home = () => {
                         <div className="mt-4 text-gray-200 text-sm leading-relaxed">
                             <h4 className="font-bold text-blue-300 uppercase tracking-wider mb-2">Highlights:</h4>
                             <ul className="list-disc list-inside space-y-1 text-gray-300">
-                                {highlights.slice(0, showAll ? highlights.length : 5).map((point, index) => (
+                                {[
+                                    "Optimized page load times by over 20% in applications like CourseStore.",
+                                    "Implemented secure, scalable APIs for applications such as Stock Manager.",
+                                    "Designed and developed responsive front-end interfaces with React and Next.js.",
+                                    "Architected and maintained robust database systems (MongoDB, PostgreSQL).",
+                                    "Automated CI/CD pipelines using GitHub Actions and Jenkins.",
+                                    "Integrated cloud services (AWS, Azure) for hosting full-stack applications.",
+                                    "Enhanced performance using caching strategies and load balancing.",
+                                    "Implemented advanced authentication mechanisms (JWT, OAuth)."
+                                ].slice(0, showAll ? 8 : 5).map((point, index) => (
                                     <li key={index}>{point}</li>
                                 ))}
                             </ul>
