@@ -12,7 +12,7 @@ const Home = () => {
     useEffect(() => {
         const iframe = document.getElementById("youtube-video");
         if (iframe) {
-            iframe.src += "&autoplay=1&mute=0";
+            iframe.src = "https://www.youtube.com/embed/RpJFaAV9bEo?autoplay=1&mute=0";
         }
     }, []);
 
@@ -42,7 +42,7 @@ const Home = () => {
                 <iframe
                     id="youtube-video"
                     className="absolute inset-0 w-[90%] h-[90%] max-h-full rounded-lg opacity-85"
-                    src="https://www.youtube.com/embed/RpJFaAV9bEo?enablejsapi=1"
+                    src="https://www.youtube.com/embed/RpJFaAV9bEo?autoplay=1&mute=0"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
