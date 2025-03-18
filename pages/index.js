@@ -6,6 +6,7 @@ import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import AWSCertification from '../components/AWSCertification';
 import GlassCard from '../components/GlassCard';
+import ChatDip from '../components/ChatDip'; // Import the ChatDip component
 
 const Index = () => {
     return (
@@ -17,13 +18,15 @@ const Index = () => {
                 <Experience />
             </GlassCard>
             <GlassCard>
-               
-                 <AWSCertification />
+                <AWSCertification />
                 <Skills />
             </GlassCard>
             <GlassCard>
                 <Projects />
             </GlassCard>
+
+            {/* Add ChatDip at the bottom for persistent chatbot */}
+            <ChatDip />
         </Layout>
     );
 };
