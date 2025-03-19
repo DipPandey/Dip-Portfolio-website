@@ -39,6 +39,7 @@ const ChatDip = () => {
     };
 
     const quickQuestions = [
+        'Dips personality type',
         'Tell me about your projects.',
         'What skills do you have?',
         'What’s your experience with AWS?',
