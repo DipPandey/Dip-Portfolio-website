@@ -63,7 +63,7 @@ const Projects = () => {
             "title": "The iiirds Studioz",
             "description": "A professional website for a web and video editing company, showcasing services, projects, and client engagement features.",
             "imageUrl": "/images/logo 1.png",
-            "demoUrl": "https://theiiirdsstuidioz.netlify.app/",
+            "demoUrl": "https://dipburly.wixsite.com/the-thirds/",
             "repoUrl": "https://github.com/DipPandey/theiiirds-studioz",
             "techStack": [
                 { "name": "React.js", "icon": "https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white" },
